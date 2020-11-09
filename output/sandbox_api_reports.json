@@ -1,0 +1,8 @@
+{
+    "metadefender": {
+        "url": "https://api.metadefender.com/v2/hash/",
+        "status": "Trojan/Malware!naT1QjSi",
+        "detected": 3,
+        "total_avs": 37
+    }
+}

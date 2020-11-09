@@ -1,0 +1,254 @@
+{
+    "md5===": {},
+    "Cymru_Hash_Registry_Get_Observable": {
+        "Errors": [],
+        "Report_Found": false,
+        "Report_resolution_data": [],
+        "Success": true
+    },
+    "VirusTotal_v2_Get_Observable": {
+        "Errors": [],
+        "Total": 66,
+        "Positives": 30,
+        "URL": "https://www.virustotal.com/gui/file/8e5567c834acc7369f844a360ed74ef3d4e9dc97ae1c381924f98d083cc7cb4b/detection/f-8e5567c834acc7369f844a360ed74ef3d4e9dc97ae1c381924f98d083cc7cb4b-1604637153"
+    },
+    "MISPFIRST": {
+        "Errors": [
+            "job_id:74 analyzer:MISPFIRST observable_name:28851b55864034cba79a0522a17bfc7a Analyzer error no MISP API key retrieved, key value: FIRST_MISP_API"
+        ],
+        "Report": {},
+        "Success": false
+    },
+    "OTXQuery": {
+        "Errors": [],
+        "Report": {
+            "geo": {},
+            "pulses": [],
+            "analysis": null,
+            "url_list": [],
+            "reputation": null,
+            "passive_dns": [],
+            "malware_samples": []
+        },
+        "Success ": true,
+        "url_list": []
+    },
+    "MISP": {
+        "Errors": [
+            "Unable to connect to MISP (https://192.168.114.128). Please make sure the API key and the URL are correct (http/https is required): HTTPSConnectionPool(host='192.168.114.128', port=443): Max retries exceeded with url: /servers/getPyMISPVersion.json (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x7f40bb14df60>: Failed to establish a new connection: [Errno 113] No route to host',))"
+        ],
+        "Report": {},
+        "Success": false
+    },
+    "HybridAnalysis_Get_Observable": {
+        "Errors": [],
+        "Report": [
+            {
+                "md5": "28851b55864034cba79a0522a17bfc7a",
+                "sha1": "4b745a85ce4347c1232b092b5633adfbf8b585d5",
+                "size": 118738,
+                "tags": [
+                    "macros-on-open"
+                ],
+                "type": "Microsoft Word 2007+",
+                "hosts": [],
+                "state": "SUCCESS",
+                "job_id": "5fa4bd42b075e71fd6529855",
+                "sha256": "8e5567c834acc7369f844a360ed74ef3d4e9dc97ae1c381924f98d083cc7cb4b",
+                "sha512": "9bdebacd78db0f44880539871de040b8404238bd155c183da9b9bffdda9a3a344f9b01a31759849cc36b8c2f34289072cebfedc1b8c8264d5667b8498392e3b2",
+                "ssdeep": "3072:zBfg7K7QRgoqbZ3NGTJAn0uiFIreB6NOib:zBg7sQRgl38FTIrecb",
+                "domains": [],
+                "imphash": "Unknown",
+                "verdict": "malicious",
+                "av_detect": 24,
+                "processes": [],
+                "vx_family": "Trojan.Generic",
+                "error_type": null,
+                "target_url": null,
+                "type_short": [
+                    "docx",
+                    "office"
+                ],
+                "interesting": false,
+                "submissions": [
+                    {
+                        "url": null,
+                        "filename": "docs 11.20.doc",
+                        "created_at": "2020-11-06T03:04:34+00:00",
+                        "submission_id": "5fa4bd42b075e71fd6529856"
+                    }
+                ],
+                "submit_name": "docs 11.20.doc",
+                "certificates": [],
+                "error_origin": null,
+                "mitre_attcks": [
+                    {
+                        "tactic": "Execution",
+                        "attck_id": "T1204",
+                        "technique": "User Execution",
+                        "attck_id_wiki": "https://attack.mitre.org/techniques/T1204",
+                        "malicious_identifiers": [],
+                        "suspicious_identifiers": [],
+                        "informative_identifiers": [],
+                        "malicious_identifiers_count": 0,
+                        "suspicious_identifiers_count": 2,
+                        "informative_identifiers_count": 1
+                    },
+                    {
+                        "tactic": "Persistence",
+                        "attck_id": "T1179",
+                        "technique": "Hooking",
+                        "attck_id_wiki": "https://attack.mitre.org/techniques/T1179",
+                        "malicious_identifiers": [],
+                        "suspicious_identifiers": [],
+                        "informative_identifiers": [],
+                        "malicious_identifiers_count": 0,
+                        "suspicious_identifiers_count": 0,
+                        "informative_identifiers_count": 3
+                    },
+                    {
+                        "tactic": "Persistence",
+                        "attck_id": "T1137",
+                        "technique": "Office Application Startup",
+                        "attck_id_wiki": "https://attack.mitre.org/techniques/T1137",
+                        "malicious_identifiers": [],
+                        "suspicious_identifiers": [],
+                        "informative_identifiers": [],
+                        "malicious_identifiers_count": 1,
+                        "suspicious_identifiers_count": 0,
+                        "informative_identifiers_count": 1
+                    },
+                    {
+                        "tactic": "Privilege Escalation",
+                        "attck_id": "T1179",
+                        "technique": "Hooking",
+                        "attck_id_wiki": "https://attack.mitre.org/techniques/T1179",
+                        "malicious_identifiers": [],
+                        "suspicious_identifiers": [],
+                        "informative_identifiers": [],
+                        "malicious_identifiers_count": 0,
+                        "suspicious_identifiers_count": 0,
+                        "informative_identifiers_count": 3
+                    },
+                    {
+                        "tactic": "Privilege Escalation",
+                        "attck_id": "T1055",
+                        "technique": "Process Injection",
+                        "attck_id_wiki": "https://attack.mitre.org/techniques/T1055",
+                        "malicious_identifiers": [],
+                        "suspicious_identifiers": [],
+                        "informative_identifiers": [],
+                        "malicious_identifiers_count": 1,
+                        "suspicious_identifiers_count": 0,
+                        "informative_identifiers_count": 0
+                    },
+                    {
+                        "tactic": "Defense Evasion",
+                        "attck_id": "T1112",
+                        "technique": "Modify Registry",
+                        "attck_id_wiki": "https://attack.mitre.org/techniques/T1112",
+                        "malicious_identifiers": [],
+                        "suspicious_identifiers": [],
+                        "informative_identifiers": [],
+                        "malicious_identifiers_count": 0,
+                        "suspicious_identifiers_count": 1,
+                        "informative_identifiers_count": 1
+                    },
+                    {
+                        "tactic": "Defense Evasion",
+                        "attck_id": "T1055",
+                        "technique": "Process Injection",
+                        "attck_id_wiki": "https://attack.mitre.org/techniques/T1055",
+                        "malicious_identifiers": [],
+                        "suspicious_identifiers": [],
+                        "informative_identifiers": [],
+                        "malicious_identifiers_count": 1,
+                        "suspicious_identifiers_count": 0,
+                        "informative_identifiers_count": 0
+                    },
+                    {
+                        "tactic": "Credential Access",
+                        "attck_id": "T1179",
+                        "technique": "Hooking",
+                        "attck_id_wiki": "https://attack.mitre.org/techniques/T1179",
+                        "malicious_identifiers": [],
+                        "suspicious_identifiers": [],
+                        "informative_identifiers": [],
+                        "malicious_identifiers_count": 0,
+                        "suspicious_identifiers_count": 0,
+                        "informative_identifiers_count": 3
+                    },
+                    {
+                        "tactic": "Discovery",
+                        "attck_id": "T1010",
+                        "technique": "Application Window Discovery",
+                        "attck_id_wiki": "https://attack.mitre.org/techniques/T1010",
+                        "malicious_identifiers": [],
+                        "suspicious_identifiers": [],
+                        "informative_identifiers": [],
+                        "malicious_identifiers_count": 0,
+                        "suspicious_identifiers_count": 0,
+                        "informative_identifiers_count": 1
+                    },
+                    {
+                        "tactic": "Collection",
+                        "attck_id": "T1114",
+                        "technique": "Email Collection",
+                        "attck_id_wiki": "https://attack.mitre.org/techniques/T1114",
+                        "malicious_identifiers": [],
+                        "suspicious_identifiers": [],
+                        "informative_identifiers": [],
+                        "malicious_identifiers_count": 0,
+                        "suspicious_identifiers_count": 1,
+                        "informative_identifiers_count": 0
+                    }
+                ],
+                "threat_level": 2,
+                "threat_score": 100,
+                "url_analysis": false,
+                "file_metadata": null,
+                "environment_id": 100,
+                "extracted_files": [],
+                "total_processes": 3,
+                "total_signatures": 27,
+                "compromised_hosts": [],
+                "analysis_start_time": "2020-11-06T03:04:41+00:00",
+                "classification_tags": [
+                    "macros-on-open"
+                ],
+                "environment_description": "Windows 7 32 bit",
+                "total_network_connections": 0
+            }
+        ],
+        "verdict": "malicious",
+        "av_detect": 24,
+        "target_url": null,
+        "threat_level": 2,
+        "threat_score ": 100,
+        "total_signatures ": 27,
+        "Success": true
+    },
+    "MalwareBazaar_Get_Observable": {
+        "Errors": [],
+        "Report": {
+            "query_status": "hash_not_found"
+        },
+        "Success": true
+    },
+    "metadefender": {
+        "url": "https://api.metadefender.com/v2/hash/",
+        "status": "Trojan/Malware!naT1QjSi",
+        "detected": 3,
+        "total_avs": 37
+    },
+    "intezer": {
+        "url": "https://analyze.intezer.com/analyses/f3d80e76-d097-4397-ac88-654287edced5",
+        "status": "trusted",
+        "analysis_time": "Mon, 09 Nov 2020 08:07:54 GMT"
+    },
+    "Maltiverse": {
+        "status": "Not Found",
+        "score": 0,
+        "url": "None"
+    }
+}

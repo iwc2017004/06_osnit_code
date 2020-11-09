@@ -1,0 +1,72 @@
+{
+    "md5===": {},
+    "Cymru_Hash_Registry": {
+        "Status": false,
+        "Positives": 0,
+        "Total": 0,
+        "URL": "NULL",
+        "Errors": []
+    },
+    "MalwareBazaar": {
+        "Status": true,
+        "Positives": null,
+        "Total": null,
+        "URL": null,
+        "Errors": []
+    },
+    "MISP": {
+        "Status": false,
+        "Positives": 0,
+        "Total": 0,
+        "URL": "NULL",
+        "Errors": [
+            "Unable to connect to MISP (https://192.168.114.128). Please make sure the API key and the URL are correct (http/https is required): HTTPSConnectionPool(host='192.168.114.128', port=443): Max retries exceeded with url: /servers/getPyMISPVersion.json (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x7f40bb34c780>: Failed to establish a new connection: [Errno 113] No route to host',))"
+        ]
+    },
+    "HybridAnalysis": {
+        "Status": "malicious",
+        "Positives": 24,
+        "Total": "Not Given",
+        "URL": null,
+        "Signatures": "Trojan.Generic",
+        "Errors": [],
+        "total_signatures ": 27
+    },
+    "MISPFIRST": {
+        "Status": false,
+        "Positives": 0,
+        "Total": 0,
+        "URL": "NULL",
+        "Errors": [
+            "job_id:133 analyzer:MISPFIRST observable_name:28851b55864034cba79a0522a17bfc7a Analyzer error no MISP API key retrieved, key value: FIRST_MISP_API"
+        ]
+    },
+    "VirusTotal_v2": {
+        "Status": true,
+        "Positives": 30,
+        "Total": 66,
+        "URL": "https://www.virustotal.com/gui/file/8e5567c834acc7369f844a360ed74ef3d4e9dc97ae1c381924f98d083cc7cb4b/detection/f-8e5567c834acc7369f844a360ed74ef3d4e9dc97ae1c381924f98d083cc7cb4b-1604637153",
+        "Errors": []
+    },
+    "VirusTotal_v3": {
+        "Engine": "VirusTotal_v3_Get_Observable",
+        "Positives": 30,
+        "Total": "Not_Given",
+        "URL": "https://www.virustotal.com/api/v3/files/8e5567c834acc7369f844a360ed74ef3d4e9dc97ae1c381924f98d083cc7cb4b",
+        "Signatures": "SNH:Script [Dropper]",
+        "Errors": []
+    },
+    "OTXQuery": {
+        "Status": true,
+        "Positives": 0,
+        "Total": 0,
+        "URL": [],
+        "Errors": []
+    },
+    "metadefender": {
+        "url": "https://api.metadefender.com/v2/hash/",
+        "status": "Trojan/Malware!naT1QjSi",
+        "detected": 3,
+        "total_avs": 37
+    }
+}
